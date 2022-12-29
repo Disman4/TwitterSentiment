@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wla-wQ-vuS">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VlM-pa-8vN">
+            <objects>
+                <viewController id="wla-wQ-vuS" customClass="ViewController" customModule="TwitterSentiment" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cDi-w0-4sH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lO-03-mJV">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="GTQ-N1-g32">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wN-fa-DsE">
+                                                <rect key="frame" x="141" y="0.0" width="108" height="600"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miG-pc-aap">
+                                                <rect key="frame" x="0.0" y="655" width="390" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="RtR-jc-s91"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsP-41-awh">
+                                                <rect key="frame" x="145" y="760" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="lsJ-W2-mqv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Predict!">
+                                                    <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="miG-pc-aap" firstAttribute="leading" secondItem="GTQ-N1-g32" secondAttribute="leading" id="6zp-gd-KUt"/>
+                                            <constraint firstAttribute="trailing" secondItem="miG-pc-aap" secondAttribute="trailing" id="imC-0t-tZr"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GTQ-N1-g32" firstAttribute="top" secondItem="5lO-03-mJV" secondAttribute="top" id="5CT-eo-Rs5"/>
+                                    <constraint firstAttribute="bottom" secondItem="GTQ-N1-g32" secondAttribute="bottom" id="99N-2f-leq"/>
+                                    <constraint firstItem="GTQ-N1-g32" firstAttribute="leading" secondItem="5lO-03-mJV" secondAttribute="leading" id="W2z-fd-U9h"/>
+                                    <constraint firstAttribute="trailing" secondItem="GTQ-N1-g32" secondAttribute="trailing" id="YTL-BC-x6D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gbw-sb-QXA"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5lO-03-mJV" firstAttribute="trailing" secondItem="Gbw-sb-QXA" secondAttribute="trailing" id="8LF-iN-6LR"/>
+                            <constraint firstItem="5lO-03-mJV" firstAttribute="leading" secondItem="Gbw-sb-QXA" secondAttribute="leading" id="d1f-2x-iiL"/>
+                            <constraint firstItem="5lO-03-mJV" firstAttribute="top" secondItem="cDi-w0-4sH" secondAttribute="top" id="q6y-Jq-bRb"/>
+                            <constraint firstItem="5lO-03-mJV" firstAttribute="bottom" secondItem="Gbw-sb-QXA" secondAttribute="bottom" id="vDL-9s-GIV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lhq-wW-wYb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Hd-Td-qaG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.6153846153845" y="132.93838862559241"/>
+        </scene>
+    </scenes>
+</document>
