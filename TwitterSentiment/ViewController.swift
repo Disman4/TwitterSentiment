@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sentimentLabel: UILabel!
     
+    let tweetCount = 100
+    
     let sentimentClassifier  = TweetSentimentClassifier()
     
     let swifter = Swifter(consumerKey: "3to6tX5wYylR9SdZEfELHUDRK", consumerSecret: "d6OXwc9buSqngWWD8ej38FTxO7VFs89agNi9dFjj17Ck5eERpN")
@@ -33,11 +35,11 @@ class ViewController: UIViewController {
         
         if let searchText = textField.text {
             
-            swifter.searchTweet(using: searchText, lang: "en", count: 100, tweetMode: .extended ) { (results, metadata) in
+            swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended ) { (results, metadata) in
                 
                 var tweets = [TweetSentimentClassifierInput]()
                 
-                for i in 0..<100{
+                for i in 0..<self.tweetCount{
                     if let tweet = results[i]["full_text"].string {
                         let tweetfORclassification = TweetSentimentClassifierInput(text: tweet)
                         tweets.append(tweetfORclassification)
