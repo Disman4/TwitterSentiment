@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="VlM-pa-8vN">
             <objects>
-                <viewController id="wla-wQ-vuS" customClass="ViewController" customModule="TwitterSentiment" sceneMemberID="viewController">
+                <viewController id="wla-wQ-vuS" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cDi-w0-4sH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
