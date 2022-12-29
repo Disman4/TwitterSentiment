@@ -13,7 +13,63 @@
 		34A7D6E9295D934200F9D200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A7D6E7295D934200F9D200 /* Main.storyboard */; };
 		34A7D6EB295D934300F9D200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7D6EA295D934300F9D200 /* Assets.xcassets */; };
 		34A7D6EE295D934300F9D200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A7D6EC295D934300F9D200 /* LaunchScreen.storyboard */; };
+		34A7D70A295DACFA00F9D200 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A7D700295DACB000F9D200 /* SwifteriOS.framework */; };
+		34A7D70B295DACFA00F9D200 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34A7D700295DACB000F9D200 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34A7D710295DB82600F9D200 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34A7D70F295DB82600F9D200 /* Secrets.plist */; };
+		34A7D721295DCEB500F9D200 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 34A7D720295DCEB500F9D200 /* TweetSentimentClassifier.mlmodel */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34A7D6FF295DACB000F9D200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		34A7D701295DACB000F9D200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		34A7D703295DACB000F9D200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		34A7D705295DACB000F9D200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		34A7D707295DACB000F9D200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34A7D70C295DACFA00F9D200 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34A7D70B295DACFA00F9D200 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		34A7D6DE295D934200F9D200 /* TwitterSentiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSentiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +80,9 @@
 		34A7D6EA295D934300F9D200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34A7D6ED295D934300F9D200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34A7D6EF295D934300F9D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Desktop/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		34A7D70F295DB82600F9D200 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		34A7D720295DCEB500F9D200 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A7D70A295DACFA00F9D200 /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +100,10 @@
 		34A7D6D5295D934200F9D200 = {
 			isa = PBXGroup;
 			children = (
+				34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */,
 				34A7D6E0295D934200F9D200 /* TwitterSentiment */,
 				34A7D6DF295D934200F9D200 /* Products */,
+				34A7D709295DACFA00F9D200 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +124,30 @@
 				34A7D6E7295D934200F9D200 /* Main.storyboard */,
 				34A7D6EA295D934300F9D200 /* Assets.xcassets */,
 				34A7D6EC295D934300F9D200 /* LaunchScreen.storyboard */,
+				34A7D720295DCEB500F9D200 /* TweetSentimentClassifier.mlmodel */,
 				34A7D6EF295D934300F9D200 /* Info.plist */,
+				34A7D70F295DB82600F9D200 /* Secrets.plist */,
 			);
 			path = TwitterSentiment;
+			sourceTree = "<group>";
+		};
+		34A7D6F8295DACB000F9D200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34A7D700295DACB000F9D200 /* SwifteriOS.framework */,
+				34A7D702295DACB000F9D200 /* SwifterMac.framework */,
+				34A7D704295DACB000F9D200 /* SwifterDemoiOS.app */,
+				34A7D706295DACB000F9D200 /* SwifterDemoMac.app */,
+				34A7D708295DACB000F9D200 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34A7D709295DACFA00F9D200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +160,7 @@
 				34A7D6DA295D934200F9D200 /* Sources */,
 				34A7D6DB295D934200F9D200 /* Frameworks */,
 				34A7D6DC295D934200F9D200 /* Resources */,
+				34A7D70C295DACFA00F9D200 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,6 +197,12 @@
 			mainGroup = 34A7D6D5295D934200F9D200;
 			productRefGroup = 34A7D6DF295D934200F9D200 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 34A7D6F8295DACB000F9D200 /* Products */;
+					ProjectRef = 34A7D6F7295DACB000F9D200 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				34A7D6DD295D934200F9D200 /* TwitterSentiment */,
@@ -120,12 +210,51 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		34A7D700295DACB000F9D200 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 34A7D6FF295DACB000F9D200 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34A7D702295DACB000F9D200 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 34A7D701295DACB000F9D200 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34A7D704295DACB000F9D200 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 34A7D703295DACB000F9D200 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34A7D706295DACB000F9D200 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 34A7D705295DACB000F9D200 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34A7D708295DACB000F9D200 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 34A7D707295DACB000F9D200 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		34A7D6DC295D934200F9D200 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				34A7D6EE295D934300F9D200 /* LaunchScreen.storyboard in Resources */,
+				34A7D710295DB82600F9D200 /* Secrets.plist in Resources */,
 				34A7D6EB295D934300F9D200 /* Assets.xcassets in Resources */,
 				34A7D6E9295D934200F9D200 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +269,7 @@
 			files = (
 				34A7D6E6295D934200F9D200 /* ViewController.swift in Sources */,
 				34A7D6E2295D934200F9D200 /* AppDelegate.swift in Sources */,
+				34A7D721295DCEB500F9D200 /* TweetSentimentClassifier.mlmodel in Sources */,
 				34A7D6E4295D934200F9D200 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

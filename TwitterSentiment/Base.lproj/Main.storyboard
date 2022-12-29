@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="VlM-pa-8vN">
             <objects>
-                <viewController id="wla-wQ-vuS" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="wla-wQ-vuS" customClass="ViewController" customModule="TwitterSentiment" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cDi-w0-4sH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,9 @@
                                                 <state key="normal" title="Predict!">
                                                     <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="predictPressed:" destination="wla-wQ-vuS" eventType="touchUpInside" id="aRD-zS-kZ7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -72,6 +75,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lhq-wW-wYb"/>
+                    <connections>
+                        <outlet property="sentimentLabel" destination="1wN-fa-DsE" id="9gU-s7-69n"/>
+                        <outlet property="textField" destination="miG-pc-aap" id="xOU-5v-bIk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hd-Td-qaG" sceneMemberID="firstResponder"/>
             </objects>
